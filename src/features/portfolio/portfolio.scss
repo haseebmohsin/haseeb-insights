@@ -1,0 +1,80 @@
+#card {
+    opacity: 0;
+    animation: fadeInUp 1s 0.3s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.01, 1.01) !important;
+    }
+
+    &:nth-of-type(1) {
+        animation-delay: 0.4s;
+    }
+
+    &:nth-of-type(2) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-of-type(3) {
+        animation-delay: 0.6s;
+    }
+
+    &:nth-of-type(4) {
+        animation-delay: 0.7s;
+    }
+}
+
+#projects_page_intro {
+    h1 {
+        @apply text-theme-primary;
+        position: relative;
+        letter-spacing: 4px;
+    }
+
+    p {
+        animation: pulse 2s;
+    }
+
+    .text-animate-hover {
+        &:hover {
+            @apply text-theme-white;
+        }
+    }
+}
+
+.carousel_image {
+    height: 240px !important;
+    transition: transform 1s;
+}
+
+//  ProjectCardModal Styles
+#modal_body {
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+        background: #b4b4b4;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #616161;
+    }
+}
+
+#modal_description {
+    ul {
+        list-style: none;
+
+        li {
+            margin: 10px 0;
+            padding-left: 2em;
+            text-indent: -1.7em;
+
+            &:before {
+                content: "•";
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+//  Project Card Modal Styles ends

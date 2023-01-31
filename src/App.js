@@ -1,57 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { Outlet, useLocation } from 'react-router-dom';
+import Sidebar from './features/sidebar/Sidebar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './App.scss';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <>
+      <ToastContainer
+        position={window.innerWidth > 600 ? 'top-center' : 'bottom-center'}
+        autoClose={6000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='dark'
+      />
+
+      {/* Sidebar */}
+      <div>
+        <Sidebar />
+      </div>
+
+      {/* Main content area */}
+      <div id='page' className='ml-0 lg:ml-40 mt-20 lg:mt-0'>
+        {location.pathname !== '/portfolio' && (
+          <span className='tags top-tags'>&lt;body&gt;</span>
+        )}
+
+        <Outlet />
+
+        {location.pathname !== '/portfolio' && (
+          <span className='tags bottom-tags'>
+            <span className='bottom-tag-body'>&lt;/body&gt;</span>
+            <br />
+            &lt;/html&gt;
+          </span>
+        )}
+      </div>
+    </>
   );
 }
 

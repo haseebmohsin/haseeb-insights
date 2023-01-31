@@ -1,0 +1,52 @@
+#page {
+    padding: 20px 15px;
+    height: 100vh;
+}
+
+.Toastify__toast-body {
+    font-size: 14px;
+}
+
+.tags {
+    position: fixed;
+    opacity: 0.7;
+    font-size: 20px;
+    @apply text-theme-primary;
+    font-family: "La Belle Aurore", cursive;
+}
+
+.top-tags {
+    top: 10px;
+}
+
+.bottom-tags {
+    bottom: 10px;
+}
+
+.bottom-tag-body {
+    margin-left: 20px;
+}
+
+// .loader-hidden {
+//     display: none;
+// }
+
+// .loader-active {
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     margin: auto;
+//     top: 0;
+//     bottom: 0;
+//     width: 50px;
+//     height: 50px;
+//     animation: fadeOut 1s 1s;
+//     animation-fill-mode: forwards;
+// }
+
+@media (max-width: 1024px) {
+    .tags {
+        display: none;
+    }
+}
