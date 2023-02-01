@@ -15,8 +15,8 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className='pb-12 pr-20' id='projects_page'>
-      <div className='mb-12 text-center' id='projects_page_intro'>
+    <div className='pb-12 lg:pr-20' id='projects_page'>
+      <div className='mb-8 text-center' id='projects_page_intro'>
         <h1 className='text-5xl mb-6'>
           <AnimatedLetters
             letterClass={letterClass}

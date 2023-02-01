@@ -55,11 +55,13 @@ export default function Home() {
                 idx={15}
               />
               <br />
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={jobArray}
-                idx={21}
-              />
+              <span id='job_array'>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={jobArray}
+                  idx={21}
+                />
+              </span>
             </h1>
 
             <p>Front End Developer | JavaScript Expert</p>

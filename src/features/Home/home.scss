@@ -4,6 +4,10 @@ h1 {
     letter-spacing: 5px;
 }
 
+#job_array {
+    @apply text-theme-primary;
+}
+
 #home_right_section_img {
     animation-name: AnimateCLogo;
     animation-duration: 8s;

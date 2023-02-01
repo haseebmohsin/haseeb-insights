@@ -1,8 +1,11 @@
 #card {
+    background: #022537;
     opacity: 0;
     animation: fadeInUp 1s 0.3s;
     animation-fill-mode: forwards;
     cursor: pointer;
+    height: 580px;
+    position: relative;
 
     &:hover {
         transform: scale(1.01, 1.01) !important;
@@ -22,6 +25,11 @@
 
     &:nth-of-type(4) {
         animation-delay: 0.7s;
+    }
+
+    #card_footer {
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -44,36 +52,93 @@
 }
 
 .carousel_image {
-    height: 240px !important;
-    transition: transform 1s;
+    height: 240px;
 }
 
-//  ProjectCardModal Styles
-#modal_body {
-    &::-webkit-scrollbar {
-        width: 0.5rem;
-        background: #b4b4b4;
+//  Project Card Modal Styles\
+#modal {
+    @apply bg-theme-secondary;
+    display: flex;
+    flex-direction: column;
+    height: 98%;
+    position: relative;
+
+    #modal_header {
+        background: #021721;
+        position: sticky;
+        top: 0;
+        display: flex;
+
+        button {
+            margin-right: 0;
+            margin-left: auto;
+        }
     }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: #616161;
-    }
-}
+    #modal_body {
+        flex: 1;
+        overflow-y: auto;
 
-#modal_description {
-    ul {
-        list-style: none;
+        &::-webkit-scrollbar {
+            width: 0.2rem;
+        }
 
-        li {
-            margin: 10px 0;
-            padding-left: 2em;
-            text-indent: -1.7em;
+        &::-webkit-scrollbar-thumb {
+            background-color: #888;
+        }
 
-            &:before {
-                content: "•";
-                margin-right: 10px;
+        &::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+
+        #modal_slider {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 50px;
+            background: rgb(211, 211, 211);
+
+            .prev,
+            .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+                padding: 1rem;
+                border: none;
+                cursor: pointer;
+            }
+
+            .prev {
+                left: 0;
+            }
+
+            .next {
+                right: 0;
             }
         }
+
+        #modal_body_description {
+            ul {
+                list-style: none;
+
+                li {
+                    margin: 10px 0;
+                    padding-left: 2em;
+                    text-indent: -1.7em;
+
+                    &:before {
+                        content: "•";
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #modal_footer {
+        background: #022537;
     }
 }
 
