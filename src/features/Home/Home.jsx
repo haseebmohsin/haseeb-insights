@@ -9,22 +9,7 @@ export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
 
   const nameArray = [' ', 'H', 'a', 's', 'e', 'e', 'b'];
-  const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ];
+  const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,9 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <div
-        className='grid lg:grid-cols-2 gap-6 lg:gap-y-0 h-full'
-        id='home_page'>
+      <div className='grid lg:grid-cols-2 gap-6 lg:gap-y-0 h-full' id='home_page'>
         {/* left section */}
         <div className='my-auto' id='home_left_section_container'>
           <div className='mb-6'>
@@ -49,18 +32,10 @@ export default function Home() {
               <span className={`${letterClass} _13`}>I</span>
               <span className={`${letterClass} _14`}>'m </span>
 
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={nameArray}
-                idx={15}
-              />
+              <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
               <br />
               <span id='job_array'>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={jobArray}
-                  idx={21}
-                />
+                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={21} />
               </span>
             </h1>
 
@@ -69,13 +44,16 @@ export default function Home() {
 
           <div className='flex space-x-3'>
             <Link to={`/contact`}>
-              <ButtonComponent outline='yellow' text='yellow' size='lg'>
+              <ButtonComponent outline='primary' text='primary' size='lg'>
                 Let's Connect
               </ButtonComponent>
             </Link>
-            {/* <ButtonComponent outline='yellow' size='lg'>
-              Download CV
-            </ButtonComponent> */}
+
+            <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+              <ButtonComponent className='text-theme-lightGray' outline='primary' size='lg'>
+                Download CV
+              </ButtonComponent>
+            </a>
           </div>
         </div>
 

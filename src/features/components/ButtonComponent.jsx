@@ -17,10 +17,7 @@ function ButtonComponent(props) {
         classes += 'text-theme-primary ';
         break;
       case 'secondary':
-        classes += 'text-theme-primary ';
-        break;
-      case 'yellow':
-        classes += 'text-theme-primary ';
+        classes += 'text-theme-secondary ';
         break;
       case 'danger':
         classes += 'text-theme-red ';
@@ -37,9 +34,6 @@ function ButtonComponent(props) {
       case 'secondary':
         classes += 'bg-theme-primary ';
         break;
-      case 'yellow':
-        classes += 'bg-theme-primary ';
-        break;
       case 'danger':
         classes += 'bg-theme-red ';
         break;
@@ -53,9 +47,6 @@ function ButtonComponent(props) {
         classes += 'border border-theme-primary ';
         break;
       case 'secondary':
-        classes += 'border border-theme-primary ';
-        break;
-      case 'yellow':
         classes += 'border border-theme-primary ';
         break;
       case 'danger':
