@@ -49,7 +49,7 @@ export default function Home() {
               </ButtonComponent>
             </Link>
 
-            <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+            <a href='/haseeb-cv.pdf' target='_blank' rel='noopener noreferrer'>
               <ButtonComponent className='text-theme-lightGray' outline='primary' size='lg'>
                 Download CV
               </ButtonComponent>
