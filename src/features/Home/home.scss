@@ -26,3 +26,9 @@ h1 {
         transition-duration: 1s;
     }
 }
+
+@media (max-width: 1024px) {
+    #home_left_section_container {
+        margin: 0 auto;
+    }
+}

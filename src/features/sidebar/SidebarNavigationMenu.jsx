@@ -1,13 +1,7 @@
 import NavLinkComponent from '../components/NavLinkComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faHome,
-  faUser,
-  faEnvelope,
-  faSuitcase,
-} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import './sidebar.scss';
 
 export default function SidebarNavigationMenu() {
   return (
@@ -44,21 +38,19 @@ export default function SidebarNavigationMenu() {
           </li>
         </ul>
 
+        <div className='mt-12 mb-4'>
+          <hr />
+        </div>
+
         <div id='social_links_container'>
           <ul>
             <li>
-              <a
-                href='https://www.linkedin.com/in/haseeb-khan-008766211'
-                target='_blank'
-                rel='noreferrer'>
+              <a href='https://www.linkedin.com/in/haseeb-khan-008766211' target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={faLinkedin} size='2xl' />
               </a>
             </li>
             <li>
-              <a
-                href='https://github.com/haseebmohsin'
-                target='_blank'
-                rel='noreferrer'>
+              <a href='https://github.com/haseebmohsin' target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={faGithub} size='2xl' />
               </a>
             </li>

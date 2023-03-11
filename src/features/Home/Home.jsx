@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import CLogo from '../../assets/images/Codesara_C_logo_transparent.png';
+import logo from '../../assets/images/haseeb-insights-logos/logo-transparent.png';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import ButtonComponent from '../components/ButtonComponent';
 import { Link } from 'react-router-dom';
@@ -59,7 +59,7 @@ export default function Home() {
 
         {/* Right Section */}
         <div className='my-auto mx-auto' id='home_right_section_container'>
-          <img src={CLogo} alt='React logo' id='home_right_section_img' />
+          <img src={logo} alt='React logo' id='home_right_section_img' />
         </div>
       </div>
     </>

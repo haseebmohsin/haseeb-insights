@@ -136,6 +136,10 @@ div#sidebar_toggler_container {
             height: 400px;
         }
 
+        div#logo_container {
+            max-width: 115px;
+        }
+
         div#sidebar_toggler_container {
             top: 0;
             right: 0;
@@ -151,8 +155,17 @@ div#sidebar_toggler_container {
         div#navigation_container {
             display: none;
 
-            li {
-                margin: 18px 0px;
+            #navigation_items {
+                position: unset;
+                display: unset;
+                height: unset;
+                margin: auto;
+                top: 80px;
+                width: 120px;
+
+                li {
+                    margin: 18px 0px;
+                }
             }
 
             &.active {
@@ -162,22 +175,16 @@ div#sidebar_toggler_container {
                 width: 100vw;
                 margin-top: 80px;
             }
-
-            #navigation_items {
-                margin: auto;
-                top: 80px;
-
-                // to be removed
-                position: initial;
-                left: initial;
-                height: initial;
-                width: initial;
-                display: initial;
-            }
         }
 
         div#social_links_container {
             position: initial;
+
+            ul {
+                display: flex;
+                gap: 30px;
+                margin-left: 24px;
+            }
         }
     }
 }
