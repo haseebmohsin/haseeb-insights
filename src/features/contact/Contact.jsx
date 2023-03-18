@@ -37,7 +37,7 @@ export default function Contact() {
     const templateParams = {
       name: values.name,
       email: values.email,
-      subject: values.subject,
+      subject: 'Email received from Haseeb Insights. Subject: ' + values.subject,
       message: values.message,
     };
 
