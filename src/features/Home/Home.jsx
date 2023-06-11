@@ -39,7 +39,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p>Front End Developer | JavaScript Expert</p>
+            <p>Full Stack Developer | Experienced in MERN Stack Technologies</p>
           </div>
 
           <div className='flex space-x-3'>
@@ -49,7 +49,7 @@ export default function Home() {
               </ButtonComponent>
             </Link>
 
-            <a href='/haseeb-cv.pdf' target='_blank' rel='noopener noreferrer'>
+            <a href='/full-stack-cv.pdf' target='_blank' rel='noopener noreferrer'>
               <ButtonComponent className='text-theme-lightGray' outline='primary' size='lg'>
                 Download CV
               </ButtonComponent>

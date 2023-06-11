@@ -25,7 +25,22 @@ import dashboard4 from '../../assets/images/meveto/meveto-dashboard/dashboard-me
 import dashboard5 from '../../assets/images/meveto/meveto-dashboard/dashboard-referral.png';
 import dashboard6 from '../../assets/images/meveto/meveto-dashboard/dashboard-faq.png';
 
+import agri1 from '../../assets/images/agri-images/login.png';
+import agri2 from '../../assets/images/agri-images/home.png';
+import agri3 from '../../assets/images/agri-images/schedules.png';
+import agri4 from '../../assets/images/agri-images/crop-schedule-form.png';
+import agri5 from '../../assets/images/agri-images/crop-schedule-details.png';
+import agri6 from '../../assets/images/agri-images/purchase-form.png';
+import agri7 from '../../assets/images/agri-images/inventory-details.png';
+
 export const projectsList = [
+  {
+    name: 'Agri',
+    images: [agri1, agri2, agri3, agri4, agri5, agri6, agri7],
+    description: `Agri is an intuitive agriculture management web app designed to streamline farm operations. With its user-friendly interface, users can easily purchase essential products such as water, seeds, and tractors, and assign them to specific crops like Rice and Potash. The Inventory page provides comprehensive information about purchases, assignees, and the remaining products in store. Agri simplifies agricultural management, ensuring efficient resource allocation and enhancing productivity for farmers.`,
+    techStack: 'html5, css3, JavaScript, React, Next.js, MUI, TailwindCSS, Node.js, Express.js, MongoDB',
+    link: 'https://www.asimkhichi.pk',
+  },
   {
     name: 'Meveto',
     images: [wordpress1, wordpress2, wordpress3, wordpress4],
@@ -35,14 +50,7 @@ export const projectsList = [
   },
   {
     name: 'Meveto Dashboard',
-    images: [
-      dashboard1,
-      dashboard2,
-      dashboard3,
-      dashboard4,
-      dashboard5,
-      dashboard6,
-    ],
+    images: [dashboard1, dashboard2, dashboard3, dashboard4, dashboard5, dashboard6],
     description: `Meveto Dashboard is a central platform for managing your Meveto account, where you can secure your applications with ease. Our platform utilizes cutting-edge algorithms to generate unique public and private keys, ensuring that your applications are always protected. With real-time insights into your account activity, customizable access permissions, and a simple and intuitive interface, Meveto's dashboard provides the tools you need to stay in control of your security. It offers a seamless and secure way to access your applications, without the worry of passwords.`,
     techStack: 'html5, css3, sass, JavaScript, React, material UI, TailwindCSS',
     link: 'https://dashboard.meveto.com',
@@ -56,16 +64,7 @@ export const projectsList = [
   },
   {
     name: 'Depart',
-    images: [
-      departImage1,
-      departImage2,
-      departImage3,
-      departImage4,
-      departImage5,
-      departImage6,
-      departImage7,
-      departImage8,
-    ],
+    images: [departImage1, departImage2, departImage3, departImage4, departImage5, departImage6, departImage7, departImage8],
     description: `Depart is transport management system. I built Depart for the university where I did my Bachelor's degree. It is a bespoke web and mobile app to automate most of the work related to student and faculty transport. The app can be used by travelers (students, faculty, etc.) and university administration. Travelers can use it to request transport facilities for an available route and to communicate with transport staff for any query. Admins can use it for many tasks. Several tasks worth mentioning are:
     <br>
     <ul>
